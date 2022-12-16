@@ -1,0 +1,8 @@
+<launch>
+    <rosparam file="$(find image_pipeline)/config/param.yaml" />
+    <!-- image_pipeline launch file -->
+    <node pkg="image_pipeline" type="publisher_cpp" name="publisher_cpp"  output="screen">
+    </node>
+    <node pkg="image_pipeline" type="subscriber_cpp" name="subscriber_cpp"  output="screen">
+    </node>
+</launch>
